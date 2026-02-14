@@ -141,8 +141,39 @@ padding-top: 20px;
   border-color: #0674b4;
   background-color:#0391e4;
   cursor: pointer;}
+.why {
+  justify-content: center;
+  display: flex;
+  font-size: 23px;
+
+}
 
 
+.div-row {
+  
+
+  
+  
+      
+}
+/* .div-row div { display: flex;
+  flex-direction: ;
+  flex-grow: 1;
+    min-width: 160px;
+    max-width: 269px;
+} */
+
+/* .div-row div {
+  padding: 0;
+    margin: 16.5px 0 26px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    color: #000;
+    overflow: hidden;
+} */
 /* .menu {font-size: 30px;
 display: none;}
 
