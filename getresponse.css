@@ -290,7 +290,7 @@ padding: 40px;
         justify-content:center;
         background-color: white;
         gap: 15px;
-        width: 100%;
+        width: fit-content;;
         padding: 70px;
       }
 .div-take-further {
@@ -307,6 +307,7 @@ padding: 40px;
   text-align: center;
   margin-top: 35px;
   gap: 30px;
+  
 }
 .div-feature {
   display: flex;
@@ -361,4 +362,12 @@ padding: 40px;
 .section-4-div-2 button {
 padding: 20px;
   
+}
+.menu {
+  display: none;
+}
+@media (max-width:600px) {
+  .menu {
+    display: block;
+  }
 }
