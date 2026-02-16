@@ -371,6 +371,10 @@ body {
 }
 .menu {
   display: none;
+  font-size: 25px;
+}
+.menu:hover {
+  cursor: pointer;
 }
 .start-free-btn {
   border: none;
@@ -402,16 +406,138 @@ body {
   display: flex;
   justify-content: center;
   justify-items: center;
+  gap: 100px;
+  margin-top: 0;
 }
 .side-by-side-div {
   display: flex;
   gap: 25px;
+
+  font-size: 14px;
+}
+.side-by-side-div:hover {
+  color: #00a2ff;
+  cursor: pointer;
+}
+.side-by-side-div img {
+  padding: 10px;
+  border-radius: 20px;
 }
 .li-div {
   display: flex;
 }
-/* @media (max-width:600px) {
+.list h4 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  font-size: 14px;
+}
+.list li:hover {
+  color: #00a2ff;
+  cursor: pointer;
+}
+.visit {
+  color: #00a2ff;
+  font-weight: bold;
+}
+.visit:hover {
+  color: #0674b4;
+  cursor: pointer;
+}
+.side-by-side h4 {
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  /* Navigation */
   .menu {
     display: block;
   }
-} */
+  .array li {
+    display: none;
+  }
+  .right-nav {
+    display: none;
+  }
+
+  .limitless {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+  .section-1-div-2 p {
+    width: 100%;
+    text-align: center;
+  }
+  .section-1-div-2 {
+    align-items: center;
+  }
+
+  .stat-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .stat h2 {
+    font-size: 35px;
+  }
+
+  .white-section {
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
+  }
+  .white-section-div,
+  .white-section-div-2 {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .div-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-4 {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .input-btn-div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section-4-div-2 input {
+    width: 100%;
+  }
+
+  .section-5 {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .li-div {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .side-by-side-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
