@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
+    <title>Tourist Centre</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,13 +12,18 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="nav-spacer" style="height: 70px;"></div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000; padding: 5px;">
       <div class="container-fluid">
         <img
           src="https://t4.ftcdn.net/jpg/03/12/59/31/240_F_312593196_e5lrutRdzDolTjFlsjGBOVBWP7kOel59.jpg"
           alt="Logo"
-          style="width: 100px"
-          ;
+          style="width: 60px"
         />
         <button
           class="navbar-toggler"
@@ -73,11 +78,11 @@
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search location"
               aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
-              Search
+              <i>Go</i>
             </button>
           </form>
         </div>
@@ -115,8 +120,9 @@
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>ILE ORO: YORUBA RESORT & CULTURAL CENTER</h5>
+          <div class="carousel-caption">
+
+            <h4>IL&Eacute; &#7884;R&#7884;&#769;: YORUBA RESORT & CULTURAL CENTER</h4>
             <p>Ile Oro is a Yoruba translation for "house of wealth," and in other translations, “house of riches.</p>
           </div>
         </div>
@@ -126,8 +132,9 @@
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>JOHN RANDLE CENTRE FOR YORUBA CULTURE & HISTORY</h5>
+          <div class="carousel-caption">
+
+            <h4>JOHN RANDLE CENTRE FOR YORUBA CULTURE & HISTORY</h4>
             <p>Ground-breaking cultural attraction that honors the Yoruba people of Nigeria.</p>
           </div>
         </div>
@@ -137,8 +144,9 @@
             class="d-block w-100"
             alt="Olumo rock"
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>OLUMO ROCK</h5>
+          <div class="carousel-caption">
+
+            <h4>OLUMO ROCK</h4>
             <p>Olumo Rock Tourist Complex is a premier destination that blends natural wonder, history, and modern attractions. Nestled in Ikija, Abeokuta, Ogun State, near the famous Itoku Adire Market, the Complex offers an unforgettable experience of adventure, culture, and relaxation.</p>
           </div>
         </div>
@@ -164,7 +172,9 @@
     </div>
 
     <!-- CARDS -->
-    <div class="row justify-content-between">
+     <div class="container my-5">
+  <div class="row justify-content-between">
+
       <div class="card" style="width: 18rem">
         <img
           src="https://fawazadelaja.com/uploads/163931188472616filename.jpg"
@@ -172,13 +182,13 @@
           alt="photo"
         />
         <div class="card-body">
-          <h5 class="card-title">ILE ORO</h5>
+          <h5 class="card-title">IL&Eacute; &#7884;R&#7884;&#769;</h5>
           <p class="card-text">
-           Ile Oro is a Yoruba translation for <span>"house of wealth,"</span> and in other translations, <span>“house of riches.”</span> Every time culture is a subject of discussion, we all try to express how rich our individual culture is. The truth is, words alone can't express how rich any culture is, and I was tired of talking. As an African (Yoruba) architectural designer, I preferred to express the richness of my culture with a statement noticeable from miles away. One that speaks the native language… a cultural landmark that beats the test of time.
+           Ile Oro is a Yoruba translation for <span style="font-weight: 650;">"house of wealth,"</span> and in other translations, <span style="font-weight: 650;">“house of riches.”</span> Every time culture is a subject of discussion, we all try to express how rich our individual culture is. The truth is, words alone can't express how rich any culture is, and I was tired of talking. As an African (Yoruba) architectural designer, I preferred to express the richness of my culture with a statement noticeable from miles away. One that speaks the native language… a cultural landmark that beats the test of time.
           </p>
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-warning"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
             class="btn btn-primary"
@@ -196,11 +206,11 @@
         <div class="card-body">
           <h5 class="card-title">JOHN RANDLE CENTRE FOR YORUBA CULTURE & HISTORY</h5>
           <p class="card-text">
-           As an all-encompassing celebration of <span>Yoruba art, fashion, literature, music, and history,</span> the John Randle Centre’s collections have been drawn from the communities they celebrate. RAA provided both exhibition design and project management work on the John Randle Centre. For this, we worked under Seun Oduwole of SI.SA Architecture, who designed the building and assembled the curatorial, exhibition, and installation teams to execute his vision for the Centre.
+           As an all-encompassing celebration of <span style="font-weight: 650;">Yoruba art, fashion, literature, music, and history,</span> the John Randle Centre’s collections have been drawn from the communities they celebrate. RAA provided both exhibition design and project management work on the John Randle Centre. For this, we worked under Seun Oduwole of SI.SA Architecture, who designed the building and assembled the curatorial, exhibition, and installation teams to execute his vision for the Centre.
           </p>
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-warning"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
             class="btn btn-primary"
@@ -218,16 +228,17 @@
         <div class="card-body">
           <h5 class="card-title">NIKE, ART GALLERY</h5>
           <p class="card-text">
-           The Nike Art Gallery is a globally renowned <span>cultural institution</span> and a vibrant hub for <span>Nigerian art,</span> celebrating the nation's rich heritage and creative brilliance.</p>
+           The Nike Art Gallery is a globally renowned <span style="font-weight: 650;">cultural institution</span> and a vibrant hub for <span style="font-weight: 650;">Nigerian art,</span> celebrating the nation's rich heritage and creative brilliance. The Nike Art Gallery is arguably the largest art gallery in West Africa, serving as a premier cultural hub for Nigerian and African art. Founded by world-renowned artist and philanthropist Chief Nike Davies-Okundaye (popularly known as "Mama Nike"), the gallery is dedicated to preserving and promoting Nigeria's rich artistic heritage.</p>
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-warning"
             data-bs-toggle="modal"
             data-bs-target="#staticBackdrop"
             class="btn btn-primary"
           >
             Visit
           </button>
+          </div>
         </div>
       </div>
     </div>
@@ -250,7 +261,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Modal title
+              Hey! kindly provide the information below:
             </h1>
             <button
               type="button"
@@ -259,7 +270,32 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <form>
+               <label>Enter your name</label><br>
+              <input type="text" placeholder="John Adejare"><br>
+              <label>Enter your email</label><br>
+              <input type="text" placeholder="example@gmail.com"><br>
+              <label>Country of residence</label><br>
+              <select name="country" class="form-select">
+                
+              <option>Ghana</option>
+              <option>US</option>
+              <option>Nigeria</option>
+              <option>UK</option>
+              <option>Dubai</option>
+              <option>South Africa</option>
+              <option>Others</option>
+              </select>
+               <label>Purpose of visit?</label><br>
+              <input type="text" placeholder=""><br>
+              <label>Proposed duration of visit</label><br>
+              <input type="text" placeholder="">
+              <label><i>Want to make an enquiry? Type your question</i></label><br>
+              <input type="text" placeholder="">
+            </form>
+          
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -268,7 +304,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Understood</button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
@@ -315,7 +351,8 @@
     <div class="row">
 
       <!-- Explore -->
-      <div class="col-md-4">
+      <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+
         <h4 class="text-warning">Explore</h4>
         <ul class="list-unstyled">
           <li><a href="#destinations" class="text-light">Destinations</a></li>
@@ -327,7 +364,8 @@
       </div>
 
       <!-- Visitor Info -->
-      <div class="col-md-4">
+<div class="col-12 col-md-4 mb-4 text-center text-md-start">
+
         <h4 class="text-warning">Visitor Info</h4>
         <ul class="list-unstyled">
           <li><a href="#about" class="text-light">About Us</a></li>
@@ -339,7 +377,8 @@
       </div>
 
       <!-- Our Center -->
-      <div class="col-md-4">
+      <div class="col-12 col-md-4 mb-4 text-center text-md-start">
+
         <h4 class="text-warning">Our Center</h4>
         <ul class="list-unstyled">
           <li><a href="#history" class="text-light">History</a></li>
@@ -359,17 +398,17 @@
       </div>
 
       <div class="col-md-4 d-flex align-items-start mb-3">
-        <img src="https://fawazadelaja.com/uploads/163931256055156filename.jpg" class="mr-3 rounded" alt="Blog 1">
+        <img src="https://fawazadelaja.com/uploads/163931256055156filename.jpg" class="mr-3 rounded" alt="Blog 1" width="60px" height="55px">
         <p>Top 10 must-see attraction in NIGERIA</p>
       </div>
 
       <div class="col-md-4 d-flex align-items-start mb-3">
-        <img src="https://raai.com/wp-content/uploads/2024/07/John-Randle-Center4-819x1024.jpg" class="mr-3 rounded" alt="Blog 2">
+        <img src="https://raai.com/wp-content/uploads/2024/07/John-Randle-Center4-819x1024.jpg" class="mr-3 rounded" alt="Blog 2" width="60px" height="55px">
         <p>Exploring Yoruba cultural heritage</p>
       </div>
 
       <div class="col-md-4 d-flex align-items-start mb-3">
-        <img src="https://www.nairaland.com/attachments/9761024_img20190704121459_jpeg7495cf6a35ad524daed747a3d94e98ac" class="mr-3 rounded" alt="Blog 3">
+        <img src="https://www.nairaland.com/attachments/9761024_img20190704121459_jpeg7495cf6a35ad524daed747a3d94e98ac" class="mr-3 rounded" alt="Blog 3" width="60px">
         <p>Best local foods to try during your visit</p>
       </div>
 
@@ -381,7 +420,35 @@
     <!-- Footer Bottom -->
     <div class="row mt-4">
       <div class="col-md-12 text-center">
-        <p class="mb-0">© 2026 Tourist Center
+        <p class="mb-0">© Developed by Wale Adegboyega 2026</p>
+
+        <style>
+  @media (max-width: 600px) {
+
+    .carousel-caption h5 {
+      font-size: 16px;
+    }
+
+    .carousel-caption p {
+      font-size: 12px;
+    }
+
+    .navbar form {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .navbar .form-control {
+      width: 100%;
+    }
+
+    .card {
+      margin: auto;
+    }
+
+  }
+</style>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
