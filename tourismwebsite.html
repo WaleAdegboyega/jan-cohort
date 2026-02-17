@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          src="https://t4.ftcdn.net/jpg/03/12/59/31/240_F_312593196_e5lrutRdzDolTjFlsjGBOVBWP7kOel59.jpg"
+          alt="Logo"
+          style="width: 100px"
+          ;
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Tours & Excursions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Boat Charters</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Accomodation & Hotels
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">First Class Hotels</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Middle Class Hotels</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Economy</a></li>
+                <li><a class="dropdown-item" href="#">Free Accomodation</a></li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">More...</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://fawazadelaja.com/uploads/163931177852787filename.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>ILE ORO: YORUBA RESORT & CULTURAL CENTER</h5>
+            <p>Ile Oro is a Yoruba translation for "house of wealth," and in other translations, “house of riches.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://raai.com/wp-content/uploads/2024/07/John-Randle-Center-1600x1000.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>JOHN RANDLE CENTRE FOR YORUBA CULTURE & HISTORY</h5>
+            <p>Ground-breaking cultural attraction that honors the Yoruba people of Nigeria.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://olumorock.ng/img/3.jpg"
+            class="d-block w-100"
+            alt="Olumo rock"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>OLUMO ROCK</h5>
+            <p>Olumo Rock Tourist Complex is a premier destination that blends natural wonder, history, and modern attractions. Nestled in Ikija, Abeokuta, Ogun State, near the famous Itoku Adire Market, the Complex offers an unforgettable experience of adventure, culture, and relaxation.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- CARDS -->
+    <div class="row justify-content-between">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://fawazadelaja.com/uploads/163931188472616filename.jpg"
+          class="card-img-top"
+          alt="photo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">ILE ORO</h5>
+          <p class="card-text">
+           Ile Oro is a Yoruba translation for <span>"house of wealth,"</span> and in other translations, <span>“house of riches.”</span> Every time culture is a subject of discussion, we all try to express how rich our individual culture is. The truth is, words alone can't express how rich any culture is, and I was tired of talking. As an African (Yoruba) architectural designer, I preferred to express the richness of my culture with a statement noticeable from miles away. One that speaks the native language… a cultural landmark that beats the test of time.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            class="btn btn-primary"
+          >
+            Visit
+          </button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://raai.com/wp-content/uploads/2024/07/John-Randle-Center9-1024x640.jpg"
+          class="card-img-top"
+          alt="photo"
+        />
+        <div class="card-body">
+          <h5 class="card-title">JOHN RANDLE CENTRE FOR YORUBA CULTURE & HISTORY</h5>
+          <p class="card-text">
+           As an all-encompassing celebration of <span>Yoruba art, fashion, literature, music, and history,</span> the John Randle Centre’s collections have been drawn from the communities they celebrate. RAA provided both exhibition design and project management work on the John Randle Centre. For this, we worked under Seun Oduwole of SI.SA Architecture, who designed the building and assembled the curatorial, exhibition, and installation teams to execute his vision for the Centre.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            class="btn btn-primary"
+          >
+            Visit
+          </button>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://1stculturetour.com/uploaded_files/tourism_products_pix/culture.jpg"
+          class="card-img-top"
+          alt="Lagos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">NIKE, ART GALLERY</h5>
+          <p class="card-text">
+           The Nike Art Gallery is a globally renowned <span>cultural institution</span> and a vibrant hub for <span>Nigerian art,</span> celebrating the nation's rich heritage and creative brilliance.</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            class="btn btn-primary"
+          >
+            Visit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ACCORDION -->
+     <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Can I book tours and tickets at the center?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Yes! Our staff can help you book local sightseeing tours, museum entries, and transport passes directly at our service desk. Many of these can also be reserved in advance via our Online Booking Portal.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Can I get physical maps and brochures?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Absolutely! We provide complimentary city maps, regional guides, and brochures for local attractions. If you prefer a digital version, you can download our official Visitor Guide PDF here.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+         Do you offer luggage storage?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">While we do not store bags on-site for security reasons, we partner with verified services like Radical Storage or Bounce which have several drop-off points within walking distance.
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+ <section class="section-5 bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Explore -->
+      <div class="col-md-4">
+        <h4 class="text-warning">Explore</h4>
+        <ul class="list-unstyled">
+          <li><a href="#destinations" class="text-light">Destinations</a></li>
+          <li><a href="#tours" class="text-light">Guided Tours</a></li>
+          <li><a href="#events" class="text-light">Cultural Events</a></li>
+          <li><a href="#gallery" class="text-light">Photo Gallery</a></li>
+          <li><a href="#map" class="text-light">Visitor Map</a></li>
+        </ul>
+      </div>
+
+      <!-- Visitor Info -->
+      <div class="col-md-4">
+        <h4 class="text-warning">Visitor Info</h4>
+        <ul class="list-unstyled">
+          <li><a href="#about" class="text-light">About Us</a></li>
+          <li><a href="#contact" class="text-light">Contact Support</a></li>
+          <li><a href="#faq" class="text-light">FAQs</a></li>
+          <li><a href="#tickets" class="text-light">Tickets & Pricing</a></li>
+          <li><a href="#accessibility" class="text-light">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Center -->
+      <div class="col-md-4">
+        <h4 class="text-warning">Our Center</h4>
+        <ul class="list-unstyled">
+          <li><a href="#history" class="text-light">History</a></li>
+          <li><a href="#team" class="text-light">Meet the Team</a></li>
+          <li><a href="#partners" class="text-light">Partners</a></li>
+          <li><a href="#news" class="text-light">News & Updates</a></li>
+          <li><a href="#careers" class="text-light">Careers</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Blog Highlights -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h4 class="text-warning">Travel Blog Highlights</h4>
+      </div>
+
+      <div class="col-md-4 d-flex align-items-start mb-3">
+        <img src="https://fawazadelaja.com/uploads/163931256055156filename.jpg" class="mr-3 rounded" alt="Blog 1">
+        <p>Top 10 must-see attraction in NIGERIA</p>
+      </div>
+
+      <div class="col-md-4 d-flex align-items-start mb-3">
+        <img src="https://raai.com/wp-content/uploads/2024/07/John-Randle-Center4-819x1024.jpg" class="mr-3 rounded" alt="Blog 2">
+        <p>Exploring Yoruba cultural heritage</p>
+      </div>
+
+      <div class="col-md-4 d-flex align-items-start mb-3">
+        <img src="https://www.nairaland.com/attachments/9761024_img20190704121459_jpeg7495cf6a35ad524daed747a3d94e98ac" class="mr-3 rounded" alt="Blog 3">
+        <p>Best local foods to try during your visit</p>
+      </div>
+
+      <div class="col-md-12 text-center mt-3">
+        <a href="#blog" class="btn btn-warning">Visit our blog to learn more</a>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="row mt-4">
+      <div class="col-md-12 text-center">
+        <p class="mb-0">© 2026 Tourist Center
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
