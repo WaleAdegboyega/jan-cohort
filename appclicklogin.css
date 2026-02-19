@@ -1,0 +1,112 @@
+ 
+      .sign-up {
+        padding: 0.92rem;
+        background-color: #34aa47;
+        color: #ffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.02rem;
+        box-shadow: 2px 0px 15px 1px rgb(237, 236, 236);
+      }
+      .sign-up:hover {
+        background-color: rgb(65, 64, 65);
+        cursor: pointer;
+      }
+      .forgot {
+        color: rgb(87, 86, 86);
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .forgot:hover {
+        text-decoration: underline;
+
+      }
+
+      .input-box {
+        display: flex;
+        height: 2.9rem;
+        width: 22rem;
+        border-radius: 0.3rem;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        color: grey;
+        box-shadow: 2px 0px 15px 1px rgb(224, 221, 221);
+        border: 1px solid #ccc;
+    
+      }
+.input-box:focus-within {
+  border: 1px solid #34aa47;
+  
+  box-shadow: none;
+}
+      .input-box input {
+        outline: none;
+        border: none;
+        text-indent: 0.8rem;
+        height: 100%;
+       flex: 1;
+        font-size: 1.05rem;
+      }
+      
+      .input-box i {
+        padding-right: 0.7rem;
+        font-size: 0.9rem;
+      }
+      .login-label {
+        font-size: 1.1rem;
+        font-weight: 395;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+      }
+      .whole-section {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .logo img {
+        width: 10rem;
+        height: 5rem;
+      }
+
+      .left-form {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+      }
+
+      .left {
+        flex: 1.01;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+      }
+      .right {
+        display: flex;
+        flex: 2;
+      }
+      .right img {
+        max-width: 100%;
+        height: auto;
+      }
+      .left-form input {
+      }
+
+
+      @media (max-width:600px){
+.whole-section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+      }
