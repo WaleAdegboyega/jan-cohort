@@ -4,45 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Appclick Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <section class="whole-section">
       <div class="left">
-        <div>
+        <div class="logo">
           <img
             src="https://appclick.ng/portal/uploads/school_content/admin_logo/1692202493-89741823864dcf5fd4617b!appclick-academy-logo-best-tech-training-center-in-ibadan-lagos-nigeria (1).png"
+            alt="Appclick logo"
           />
         </div>
         <div>
-          <h4>User Login</h4>
-          <form class="left-form">
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <button>Sign In</button>
-            <p>Forgot Password</p>
+          <h4 class="login-label">User Login</h4>
+          <form class="left-form" action="login">
+            <div class="input-box">
+              <input type="text" placeholder="Username" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-box">
+              <input type="password" placeholder="Password" />
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <button class="sign-up">Sign In</button>
+            <a class="forgot" href=""
+              ><i class="fa-solid fa-key"></i>Forgot Password</a
+            >
           </form>
         </div>
       </div>
       <div class="right">
-        <img src="/assets/appclick-academy-courses-best-fullstack-development-training-college-in-ibadan-lagos-nigeria.jpg">
+        <img
+          src="/assets/appclick-academy-courses-best-fullstack-development-training-college-in-ibadan-lagos-nigeria.jpg"
+        />
       </div>
     </section>
 
     <style>
-        .whole-section {
-            display: flex;
-            justify-content: center;
-                }
+      .sign-up {
+        padding: 0.92rem;
+        background-color: #34aa47;
+        color: #ffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.02rem;
+        box-shadow: 2px 0px 15px 1px rgb(237, 236, 236);
+      }
+      .sign-up:hover {
+        background-color: rgb(65, 64, 65);
+        cursor: pointer;
+      }
+      .forgot {
+        color: rgb(87, 86, 86);
+        font-size: 0.78rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .forgot:hover {
+        text-decoration: underline;
+
+      }
+
+      .input-box {
+        display: flex;
+        height: 2.9rem;
+        width: 22rem;
+        border-radius: 0.3rem;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        color: grey;
+        box-shadow: 2px 0px 15px 1px rgb(224, 221, 221);
+        border: 1px solid #ccc;
+    
+      }
+.input-box:focus-within {
+  border: 1px solid #34aa47;
+  
+  box-shadow: none;
+}
+      .input-box input {
+        outline: none;
+        border: none;
+        text-indent: 0.8rem;
+        height: 100%;
+       flex: 1;
+        font-size: 1.05rem;
+      }
       
-        
-        .left-form {
-            display: flex;
-            flex-direction: column;
-            
-        }
-        .right {
-            width: 40px;
-        }
+      .input-box i {
+        padding-right: 0.7rem;
+        font-size: 0.9rem;
+      }
+      .login-label {
+        font-size: 1.1rem;
+        font-weight: 395;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+      }
+      .whole-section {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .logo img {
+        width: 10rem;
+        height: 5rem;
+      }
+
+      .left-form {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+      }
+
+      .left {
+        flex: 1.01;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+      }
+      .right {
+        display: flex;
+        flex: 2;
+      }
+      .right img {
+        max-width: 100%;
+        height: auto;
+      }
+      .left-form input {
+      }
+
+
+      @media (max-width:600px){
+.whole-section {
+  display: flex;
+  flex-direction: column;
+  
+}
+      }
     </style>
   </body>
 </html>
