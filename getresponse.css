@@ -452,7 +452,12 @@ body {
 .side-by-side h4 {
   font-size: 17px;
 }
-
+.footer-span {
+color: black;
+}
+.footer-span:hover {
+color: black;
+}
 @media (max-width: 600px) {
   /* Navigation */
   .menu {
