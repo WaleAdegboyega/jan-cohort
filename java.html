@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // QUESTION ONE
+       numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+ doubledNumbers = numbers.map(num => num * 2);
+
+console.log(doubledNumbers);
+
+
+// QUESTION TWO
+ scores = [45, 67, 89, 34, 90, 76, 54];
+
+passingScores = scores.filter(scores => scores > 60);
+
+console.log(passingScores); 
+
+
+// QUESTION THREE
+score = [45, 67, 89, 34, 90, 76, 54];
+
+totalSum = score.reduce((accumulator, currentScore) => {
+  return accumulator + currentScore;
+}, 0);
+
+console.log(totalSum); 
+
+
+// QUESTION FOUR
+ fruits = ['apple', 'banana', 'mango', 'orange', 'pear'];
+
+ firstThree = fruits.slice(0, 3);
+
+console.log(firstThree); 
+
+
+// QUESTION FIVE
+fruit = ['apple', 'banana', 'mango', 'orange', 'pear'];
+
+index = fruit.indexOf('mango'); 
+
+if (index !== -1) {
+  fruit.splice(index, 1, 'grapes');
+}
+
+console.log(fruit); 
+
+
+// QUESTION SIX
+numbers = [45, 67, 89, 34, 90, 76, 54];
+
+highWeightScore = numbers.find(numbers => numbers > 80);
+
+console.log(highWeightScore); 
+
+
+// QUESTION SEVEN
+ fruitss = ['apple', 'banana', 'grapes', 'orange', 'pear'];
+
+fruitss.forEach((fruitss) => {
+  console.log(fruitss.toUpperCase());
+});
+
+
+// QUESTION EIGHT
+const names = ['John', 'Jane', 'Mark', 'Mary'];
+
+const hasMark = names.includes('Mark');
+
+console.log(hasMark); 
+
+
+// QUESTION NINE
+grades = [45, 67, 89, 34, 90, 76, 54];
+
+grades.sort((a, b) => a - b);
+
+console.log(grades); 
+
+// QUESTION TEN
+const primary = ['red', 'blue'];
+const secondary = ['green', 'yellow'];
+
+const allColors = primary.concat(secondary);
+
+console.log(allColors); 
+
+    </script>
+</body>
+</html>
